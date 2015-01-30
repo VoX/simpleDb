@@ -16,8 +16,10 @@ db.flush();
 
 ## Tests
 1. To run the tests first install nodeunit
+
 	`npm install nodeunit -g`
 
 2. Run the tests!
+
 	`nodeunit simpleDbTests.js`
 
