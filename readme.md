@@ -1,5 +1,5 @@
 # simpleDb
-Simple db is a very simple in memory database library which can be persisted to a file. 
+Simple db is a very simple in memory key value store which can be persisted to a file. 
 
 ## Usage
 Simply new up a database with the location the database file should be read from / persisted to. All database operations are performed in memory and only written to disk when flush is called. 
@@ -8,7 +8,7 @@ Simply new up a database with the location the database file should be read from
 var simpleDb = require("./simpleDb.js");
 var fs = require("fs");
 
-var db = new simpleDb(testDbPath, fs);
+var db = new simpleDb("./main.db", fs);
 db.set("key1","val1");
 var val = db.get("key1");
 db.flush();
